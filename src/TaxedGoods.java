@@ -17,7 +17,7 @@ public class TaxedGoods extends Product {
 
 	@Override
 	public double calcTax() {
-		if (imported == true) {
+		if (isImported() == true) {
 			return getPrice() * .15;
 		}
 		return getPrice() * .10;

@@ -18,7 +18,7 @@ public class NonTaxedGoods extends Product {
 
 	@Override
 	public double calcTax() {
-		if (imported == true) {
+		if (isImported() == true) {
 			return getPrice() * .05;
 		}
 		return 0;
