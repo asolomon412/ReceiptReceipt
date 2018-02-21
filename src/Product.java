@@ -23,7 +23,7 @@ public abstract class Product {
 		this.name = name;
 		this.price = price;
 		// this.quantity = quantity;
-		this.imported = true;
+		setImported(imported);
 	}
 
 	public String getName() {
