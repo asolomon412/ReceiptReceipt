@@ -55,7 +55,7 @@ public abstract class Product {
 	}
 
 	public void setImported(boolean imported) {
-		this.imported = true;
+		this.imported = imported;
 	}
 
 	public abstract double calcTax();
